@@ -1,0 +1,43 @@
+/* EventCalendar.css */
+.calendar-container {
+    width: 800px;
+}
+
+a {
+    color: #79994d !important;
+}
+  
+.fc .fc-scrollgrid-liquid {
+    color: black;
+}
+
+#fc-dom-86 {
+    font-family: 'Bungee', sans-serif;
+    font-size: 3rem;
+}
+  
+.fc-toolbar-title {
+    color: #98B66E;
+}
+  
+.fc .fc-button-primary {
+    background-color: #98B66E;
+    border-color: #98B66E;
+}
+  
+.fc .fc-button-primary:hover {
+    background-color: #87a65a;
+    border-color: #87a65a;
+}  
+
+.fc-direction-ltr .fc-button-group > .fc-button:not(:first-child) {
+    background-color: #87a65a;
+}
+
+.fc-direction-ltr .fc-button-group > .fc-button:not(:last-child) {
+    background-color: #87a65a;
+}
+
+.fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+    border-color: #87a65a;
+}

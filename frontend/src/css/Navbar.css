@@ -1,0 +1,133 @@
+.navbar nav {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: #F1ECE4;
+  height: 80px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.navtext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  border-radius: 100px;
+  color: #2f2f2f;
+  line-height: 0;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0 1.3em;
+  margin: 0.6em 0;
+}
+
+.navtext:hover {
+  color: #79994d !important;
+}
+
+#login__btn, #logout__btn { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  background-color: #79994d;
+  border-radius: 100px;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 0.6em 0;
+  color: white !important;
+}
+
+#login__btn:hover, #logout__btn:hover {
+  background-color: #98B66E;
+  color: white;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#brand {
+  text-transform: uppercase;
+  float: left;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  font-size: 1.3rem;
+  z-index: 100;
+}
+
+.nav-menu li a {
+  padding-top: 10px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+.mobile-navbar i {
+  color: black;
+  align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  #brand {
+    font-weight: 800;
+    font-size: 20px;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background: #F1ECE4;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+  }
+
+  .nav-menu.active {
+    right: -300px;
+  }
+
+  .nav-menu li {
+    margin-bottom: 25px;
+  }
+
+  .mobile-navbar {
+    display: block;
+  }
+
+  .mobile-navbar i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #bar {
+    position: absolute;
+    right: 40px;
+    top: 25px;
+  }
+}
